@@ -11,7 +11,7 @@ public class CustomerDAOImpl implements CustomerDAO{
     @Override
     public boolean CreateTable() throws SQLException{
         //try {
-        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/IgirePay", "postgres", "admin");
+        Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5433/IgirePay", "postgres", "123");
         Statement statement= connection.createStatement();
 
         String CreateSql = """ 
